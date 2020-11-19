@@ -1,0 +1,21 @@
+
+function fuelUp()
+    SLOT_COUNT = 16  ----Number of slots in the turtle
+    for i = 1, SLOT_COUNT, 1 do ---Select the lava bucket
+        local data = trutle.inspect()
+        if data.id == 325 then 
+            turtle.select(i)
+            turtle.refuel()
+            turtle.dropUp(i)
+        end
+        else
+            print("No lava bucket!")
+        end
+    
+
+    end
+
+
+end
+
+fuelUp()
